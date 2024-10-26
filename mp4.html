@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to MP4 Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="container container-medium">
+                <div class="navigation-flex-1">
+                    <a href="index.html" class="navigation-logo-container">
+                        <img src="images/logo.png" alt="logo" class="navigation-logo">
+                        <span class="navigation-logo-text">YouTube Converter</span>
+                    </a>
+                    <div class="navigation-options-container">
+                        <ul>
+                            <li><a href="index.html" class="btn btn-1-white">Convert to MP3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="download-section">
+            <div class="container container-medium">
+                <div class="flex-1">
+                    <h1 class="title">YouTube to MP4</h1>
+                    <p class="title-sub">Download MP4 videos from YouTube in high quality</p>
+                    
+                    <div class="convert-container">
+                        <form id="form" action="#" method="POST">
+                            <input required type="url" data-is="url" class="input-style-1" 
+                                placeholder="Paste YouTube link here">
+                        </form>
+                        <button data-is="convert" class="btn convert-btn">
+                            Convert MP4
+                        </button>
+                    </div>
+                    
+                    <div id="msg" class="danger-msg hide"></div>
+                    <div class="media-section hide"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <div class="container container-medium">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-video feature-icon"></i>
+                        <h3>HD Quality</h3>
+                        <p>Download videos in high quality</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-infinity feature-icon"></i>
+                        <h3>No Limits</h3>
+                        <p>Convert as many videos as you want</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3>Safe & Secure</h3>
+                        <p>100% safe and secure conversion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 YouTube Converter. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let state = {
+            page: 'mp4'
+        };
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
